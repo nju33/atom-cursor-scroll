@@ -30,10 +30,10 @@ module.exports =
 
     setTimeout =>
       @subscription.add atom.workspace.observeActivePaneItem (item) =>
-        if item.uri? and item.uri is 'atom://config'
+        unless item?
           return
 
-        unless item?
+        if item.uri? and item.uri is 'atom://config'
           return
 
         @removeEventListener() if @scroller

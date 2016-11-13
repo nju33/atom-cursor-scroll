@@ -104,9 +104,6 @@ module.exports = class Scroller
       , 100
 
   getSpeed: (dir, y) ->
-    console.log y
-    console.log @yFieldSize * 0.1
-    console.log @yFieldSize * 0.5
     if dir is 'top'
       if y < @yFieldSize * 0.1 then 'fast'
       else if y < @yFieldSize * 0.5 then 'normal'
@@ -144,7 +141,7 @@ module.exports = class Scroller
     """
 
   showElements: ->
-    @style.innerText = ''
+    @style?.innerText = ''
 
   addAllEventListener: ->
     @element.addEventListener 'mousemove', @handleMousemove
