@@ -1,6 +1,6 @@
 {
   "name": "cursor-scroll",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scroll at cursor position",
   "main": "./lib/cursor-scroll",
   "repository": "https://github.com/nju33/atom-cursor-scroll",
